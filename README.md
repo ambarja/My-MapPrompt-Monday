@@ -1,1 +1,1 @@
-# Maps following the #MapPromptMonday weekly mapping project
+# Maps following the #MapPromptMonday weekly mapping project 🗺️ 🤖 
