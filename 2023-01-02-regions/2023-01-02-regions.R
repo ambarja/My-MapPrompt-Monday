@@ -60,7 +60,7 @@ p1 <- region_def %>%
   facet_wrap(~ year) + 
   guides(
     fill = guide_colourbar(
-      title = "area deforest [km<sup/>2]",
+      title = "Forest cover loss [km<sup/>2]",
       title.position = "top",
       barwidth = 16,
       barheight = .8,
@@ -126,7 +126,7 @@ p3 <- region_def %>%
   scale_fill_gradientn(colours = c("#190D33")) + 
   guides(
     fill = guide_colourbar(
-      title = "•  area deforest [km<sup/>2] <br>Peru",
+      title = "•  Forest cover loss [km<sup/>2] <br>Peru",
       title.position = "left",
       barwidth = 1.0,
       barheight = 0.25,
@@ -134,7 +134,7 @@ p3 <- region_def %>%
     ),
     colour = guide_legend(title.vjust = 0.7,keywidth = 1.0,keyheight = 0.5,title.position = "left", fill = NA)
   ) +
-  labs(color = "• mean area [km2]") + 
+  labs(color = "• Forest cover loss [km2]") + 
   theme(
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
@@ -153,18 +153,18 @@ title <- ggplot(
   tibble(x = 1.5, y = 1),
   aes(x, y)) +
   labs(
-    title = "<b>DEFORESTATION IN PERU</b>",
+    title = "<b> FOREST COVER LOSS IN PERU</b>",
     subtitle = 
-      "<br>Spatial and temporal variation of deforestation in the 24 departments <br> of Peru.
+      "<br>Spatial and temporal variation of forest cover loss in the 24 departments <br> of Peru.
     Each department has the sum of the total area of forest lost <br> from 2001 to 2021.
-    The departments with the largest accumulated <br> area of forest lost in the last 20
-    years are led by <b>Loreto</b> and <b>San Martin.</b>") +
+    The departments with the largest accumulated <br> area of forest cover loss in the last 20
+    years are led by <b>Loreto</b> and <br><b>San Martin.</b>") +
   theme(
     plot.title = element_textbox_simple(
       family = "Bebas Neue",
       face = "bold",
       color = "black",
-      size = 60,
+      size = 53,
       lineheight = 1.35),
     plot.subtitle = element_textbox_simple(
       family = "Oswald Light",
@@ -263,3 +263,4 @@ ggsave(
   height = 10,
   bg = "#e4ddc3"
     )
+
